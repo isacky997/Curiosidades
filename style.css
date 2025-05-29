@@ -1,65 +1,120 @@
 /* Estilo geral */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   background-color: #f4f4f4;
   color: #333;
 }
 
 header {
-   background-color: #15cb15;
-   color: white;
-   text-align: center;
-   padding: 1.5rem 1rem;
+  background-color: #2d9d2d; /* Cor verde mais suave */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem; /* Mais espaço ao redor */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombras sutis */
 }
 
 header h1 {
-   margin: 0;
-   font-size: 2rem;
+  margin: 0;
+  font-size: 2.5rem; /* Tamanho maior para o título */
+  font-weight: 600;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00; /* Efeito hover suave */
 }
 
 main {
-   max-width: 1000px;
-   margin: 2rem auto;
-   padding: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem 1rem; /* Mais espaço interno */
 }
 
 .intro {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .curiosidades {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 1rem;
 }
 
-.curiosidades-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 300px;
-    transition: transform 0.3s ease;
+.curiosidade-card {
+  background-color: white;
+  border-radius: 12px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombras mais suaves */
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionando efeito suave */
+  text-align: center;
+}
+
+.curiosidade-card:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombras mais intensas no hover */
+}
+
+.curiosidade-card h3 {
+  font-size: 1.4rem;
+  color: #2d9d2d;
+  margin-bottom: 1rem;
+}
+
+.curiosidade-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 footer {
-   background-color: #15cb15;
-   color: white;
-   text-align: center;
-   padding: 1rem;
-   margin-top: 2rem;
+  background-color: #2d9d2d;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
-   header h1 {
-    font-size: 1.5rem;
-   }
-    
-  .curiosidades-card {
-    width: 90%;
+  header h1 {
+    font-size: 1.8rem; /* Menor título em telas pequenas */
+  }
+
+  nav a {
+    font-size: 1rem; /* Reduzir o tamanho das fontes dos links */
+    margin: 0 0.5rem;
+  }
+
+  .curiosidade-card {
+    width: 90%; /* Mais flexível para telas pequenas */
+    padding: 1rem;
   }
 }
