@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #2d9d2d; /* Cor verde mais suave */
+  background-color: #00FFFF; /* Cor verde mais suave */
   color: white;
   text-align: center;
   padding: 2rem 1rem; /* Mais espaço ao redor */
@@ -78,7 +78,7 @@ main {
 
 .curiosidade-card h3 {
   font-size: 1.4rem;
-  color: #2d9d2d;
+  color: #00FFFF;
   margin-bottom: 1rem;
 }
 
@@ -89,7 +89,7 @@ main {
 }
 
 footer {
-  background-color: #2d9d2d;
+  background-color: #00FFFF;
   color: white;
   text-align: center;
   padding: 1.5rem;
