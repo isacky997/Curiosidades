@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Descubra curiosidades fascinantes sobre o mundo ao nosso redor.">
-  <meta name="keywords" content="curiosidades, fatos incríveis, ciência, mundo, conhecimento">
+  <meta name="description" content="Descubra curiosidades fascinantes sobre ciência, natureza e o universo.">
+  <meta name="keywords" content="curiosidades, ciência, universo, natureza, fatos incríveis, conhecimento">
   <meta name="author" content="Isacky Augusto Orquizas Marçal">
   <title>Curiosidades Incríveis</title>
   <link rel="stylesheet" href="style.css" />
@@ -13,7 +14,7 @@
 <body>
   <header>
     <h1>Curiosidades Incríveis</h1>
-    <nav>
+    <nav aria-label="Menu principal">
       <ul class="nav-menu">
         <li><a href="sabia.html">Você sabia?</a></li>
         <li><a href="curioso.html">Fato curioso</a></li>
@@ -23,24 +24,32 @@
   </header>
 
   <main>
+    <!-- Introdução -->
     <section class="intro" aria-labelledby="intro-title">
-      <h2 id="intro-title" class="sr-only">Introdução</h2>
+      <h2 id="intro-title">Bem-vindo</h2>
       <p>Descubra curiosidades fascinantes sobre o mundo ao nosso redor!</p>
     </section>
 
-    <section class="video-section" id="videos">
-      <h2>Veja tambem</h2>
-      <p>Assista a um video cheio de curiosidades interessantes!</p>
-      <iframe src="https://youtu.be/FwRE9EFRlfw?si=rO8U72kofozM5Btr" allowfullscreen></iframe>
+    <!-- Vídeo -->
+    <section class="video-section" id="videos" aria-labelledby="video-title">
+      <h2 id="video-title">Veja também</h2>
+      <p>Assista a um vídeo cheio de curiosidades interessantes!</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UKSAX19Ot7A?si=jWaaFntfxpKxJz3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+        </iframe>
+      </div>
     </section>
 
-    <section>
-      <!--Substitua as URLs pelas suas imagens-->
-      <img src="polvo.png" alt="Polvo">
-      <img src="lua.png" alt="Lua">
-      <img src="estrela.png" alt="estrela">
+    <!-- Imagens ilustrativas -->
+    <section class="imagens" aria-labelledby="imagens-title">
+      <h2 id="imagens-title" class="sr-only">Imagens relacionadas às curiosidades</h2>
+      <img src="polvo.png" alt="Imagem de um polvo, animal com três corações" />
+      <img src="lua.png" alt="Imagem da Lua no espaço" />
+      <img src="estrela.png" alt="Representação artística de uma estrela no universo" />
     </section>
 
+    <!-- Cartões de curiosidades -->
     <section class="curiosidades" aria-labelledby="curiosidades-title">
       
 
@@ -69,9 +78,10 @@
 
   <footer>
     <p>
-      Site desenvolvido por Isacky Augusto Orquizas Marçal - 
-      Colégio Estadual Vicente Rijo - Londrina PR
+      Site desenvolvido por <strong>Isacky Augusto Orquizas Marçal</strong><br>
+      Colégio Estadual Vicente Rijo - Londrina, PR
     </p>
   </footer>
 </body>
+
 </html>
