@@ -1,151 +1,141 @@
-/* Estilo geral */
+/* Fonte limpa e moderna */
 body {
+  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
-  transition: background-color 0.3s ease;
 }
 
-/* Acessibilidade */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
+/* Cabeçalho */
 header {
-  background-color: #20B2AA;
+  background-color: #004080;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 2rem 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-nav {
-  margin-top: 1rem;
 }
 
 .nav-menu {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Introdução */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Vídeo */
+.video-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
-.nav-menu li {
-  margin: 0 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ffcc00;
-}
-
-main {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 2rem 1rem;
-}
-
-.intro {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.intro p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
+/* Cartões de curiosidade */
 .curiosidades {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
 }
 
-.curiosidade-card a {
+.curiosidade-card {
+  display: block;
+  width: 300px;
   text-decoration: none;
-  color: inherit; 
-  display: block; 
+  color: inherit;
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
 }
 
 .curiosidade-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-.curiosidade-card h3 {
-  font-size: 1.4rem;
-  color: #333;
-  margin-bottom: 1rem;
+.curiosidade-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.curiosidade-card p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
+.curiosidade-info {
+  padding: 15px;
 }
 
+.curiosidade-info h3 {
+  margin-top: 0;
+  color: #004080;
+}
+
+.curiosidade-info p {
+  margin: 10px 0 0;
+}
+
+/* Rodapé */
 footer {
-  background-color: #20B2AA;
+  background-color: #004080;
   color: white;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
-footer p {
-  margin: 0;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  .nav-menu li {
-    margin: 0.5rem;
-  }
-
-  nav a {
-    font-size: 1rem;
-    margin: 0 0.5rem;
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .curiosidade-card {
     width: 90%;
-    padding: 1rem;
   }
+
+  .video-container iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.voltar-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.voltar-btn:hover {
+  background-color: #005fa3;
 }
